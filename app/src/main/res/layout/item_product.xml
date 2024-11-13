@@ -1,0 +1,62 @@
+<!--
+ * Author : Sahana Baggaon Gajendra
+ * andrewid : sbaggaon
+ * email : sbaggaon@andrew.cmu.edu
+
+ * Soruces: https://chatgpt.com/
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <!-- Parent layout for a horizontal product card with padding -->
+
+    <!-- ImageView for the product image with fixed dimensions and cropping -->
+    <ImageView
+        android:id="@+id/ivProductImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Inner vertical layout to hold product details, takes up remaining space -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Displays product name, bold text, limited to two lines with ellipsis -->
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Displays product price with emphasis using a distinct color -->
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#FF5722" />
+
+        <!-- Displays a product link, compact size, limited to one line with ellipsis -->
+        <TextView
+            android:id="@+id/tvProductLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#3F51B5"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

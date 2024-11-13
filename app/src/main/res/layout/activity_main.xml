@@ -1,0 +1,71 @@
+<!--
+ * Author : Sahana Baggaon Gajendra
+ * andrewid : sbaggaon
+ * email : sbaggaon@andrew.cmu.edu
+
+ * Soruces: https://chatgpt.com/
+ -->
+
+
+<!--
+
+This XML layout defines the user interface for the product search screen
+of the Android app. It includes a title header, input fields for brand and
+product type, a button to fetch products, a RecyclerView to display results,
+and a ProgressBar for loading indication.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCCCB"
+        android:padding="16dp"
+        android:text="Makeup Products Search"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Brand Name"
+        android:padding="8dp" />
+    <!-- Product Type Input: EditText for user to enter the product type -->
+    <EditText
+        android:id="@+id/etProductType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Product Type"
+        android:padding="8dp" />
+    <!-- Fetch Button: Button to trigger the product search -->
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Products"
+        android:background="#E6E6FA"
+        />
+    <!-- RecyclerView: Displays the list of fetched products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
+    <!-- Progress Bar: Shows a loading spinner during data fetch -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

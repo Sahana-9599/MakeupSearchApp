@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etBrand" type="id" />
+    <item name="etProductType" type="id" />
+    <item name="btnFetch" type="id" />
+    <item name="rvProducts" type="id" />
+    <item name="progressBar" type="id" />
+</resources>
