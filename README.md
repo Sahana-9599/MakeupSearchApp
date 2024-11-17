@@ -5,23 +5,23 @@ The goal of the project was to design and implement a complete distributed appli
 
 **System Architecture**
 
--**Android Client**
+- **Android Client**
    - Collects user input and sends HTTP requests
    - Parses JSON responses and renders results
    - Supports repeatable queries without restarting
    - Handles validation and network errors
 
--**Backend Web Service (Java Servlets)**
+- **Backend Web Service (Java Servlets)**
    - Implements REST APIs consumed by the Android app
    - Executes business logic and input validation
    - Integrates with third‑party API and handles errors
 
--**Third‑Party API Integration**
+- **Third‑Party API Integration**
    - Fetches raw product data from a public makeup API
    - Normalizes fields, filters invalid data, sorts results
    - Returns a simplified JSON response to the client
 
--**Logging & Operations Dashboard**
+- **Logging & Operations Dashboard**
    - Logs request/response traffic to MongoDB Atlas
    - Web dashboard shows request volume, latency, status distribution, and logs
 
