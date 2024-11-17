@@ -7,7 +7,6 @@ The goal of the project was to design and implement a complete distributed appli
 
 ![Components](Components.png)
 
-
 - **Android Client**
    - Collects user input and sends HTTP requests
    - Parses JSON responses and renders results
