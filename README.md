@@ -3,7 +3,7 @@
 This project is a distributed system built as a native Android application backed by a Java-based web service. The app allows users to search for makeup products by brand and/or product type, while all business logic, third-party API integration, logging, and analytics are handled server-side.
 The goal of the project was to design and implement a complete distributed application with a mobile client, backend service, persistent storage, and an operational analytics dashboard.
 
-##### System Architecture
+**System Architecture**
 
 **Android Client**
 - Collects user input and sends HTTP requests
@@ -25,7 +25,7 @@ The goal of the project was to design and implement a complete distributed appli
 - Logs request/response traffic to MongoDB Atlas
 - Web dashboard shows request volume, latency, status distribution, and logs
 
-##### Key Features
+**Key Features**
 - Native Android UI with EditText, Button, and RecyclerView
 - Server‑side data processing and validation
 - Robust error handling across client, server, and API failures
@@ -33,7 +33,7 @@ The goal of the project was to design and implement a complete distributed appli
 - Analytics dashboard with charts and full log visibility
 - Containerized backend deployed using GitHub Codespaces
 
-##### Technologies Used
+**Technologies Used**
 - Android: Android Studio, Java, Retrofit, Gson
 - Backend: Java Servlets, REST APIs, MVC pattern
 - Data & Storage: MongoDB Atlas, CRUD operations
